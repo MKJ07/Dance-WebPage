@@ -1,0 +1,75 @@
+extends base.pug
+
+block scripts
+      script(src='/Static/index.js')
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    Section#introsection 
+            h3 Welcome To MKJ Dance Academic
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ratione tempore culpa voluptate sint accusamus
+    Section#oursection 
+        h2 Our Courses
+        .courses 
+            img(src="/Static/bg2_files/c1.webp", alt="")
+            h4 Ballet Dancing
+        .courses 
+            img(src="/Static/bg2_files/yoga.webp", alt="")
+            h4 Yoga Classes
+        .courses 
+            img(src="/Static/bg2_files/hiphop.webp", alt="")
+            h4 HipHop
+        .courses 
+            img(src="/Static/bg2_files/couple.webp", alt="")
+            h4 Festival Dance
+        .courses 
+            img(src="/Static/bg2_files/logo3.jpg", alt="")
+            h4 Western Dance
+    section#facility 
+        h2 Our Facilities 
+        .fac
+            .slides 
+                div#img
+                    img(src="/Static/bg2_files/1316292.webp")
+                    h4 Unisex Dance Academy
+            .slides 
+                div#img
+                    img(src="/Static/bg2_files/f1.webp") 
+                    h4 Award Ceremony 
+            .slides 
+                div#img
+                    img(src="/Static/bg2_files/f2.webp")
+                    h4 Group Coordination
+            .slides 
+                div#img
+                    img(src="/Static/bg2_files/f3.webp")
+                    h4 Spacious Room
+            .slides 
+                div#img
+                    img(src="/Static/bg2_files/f4.webp")
+                    h4 Music On
+            .slides 
+                div#img
+                    img(src="/Static/bg2_files/f5.webp")
+                    h4 Party Celebrations 
+            .slides 
+                div#img
+                    img(src="/Static/bg2_files/f7.webp")
+                    h4 Auditorium  Facilities
+            .slides 
+                div#img
+                    img(src="/Static/bg2_files/f6.webp") 
+                    h4 Western Culture
+    section#oursponsor 
+            h2 Our Sponsors 
+            .sponsor 
+                img(src="/Static/bg2_files/s2.jpg", alt="")
+            .sponsor 
+                img(src="/Static/bg2_files/s3.jpg", alt="")
+            .sponsor 
+                img(src="/Static/bg2_files/s4.jpg", alt="")
+            .sponsor 
+                img(src="/Static/bg2_files/s6.jpg", alt="")
+    

@@ -1,0 +1,28 @@
+extends base.pug
+block scripts
+      script(src='/Static/app.js')
+block style 
+    style
+        include ../Static/style.css
+        include ../Static/contact.css
+
+block content  
+    section.Contact
+        h1.con Contact Us
+    form.contact(action='')
+        .input
+            label(for='Name') Name: 
+            br
+            input.place(type='text' placeholder='Enter Your Name')
+            br
+        .input
+            label(for='Email') Email: 
+            br
+            input.place(type='text' placeholder='Enter Your Email ID')
+            br
+        .input
+            label(for='Mobile') Mobile: 
+            br
+            input.place(type='text' placeholder='Enter Your Number')
+            br
+        button.btnc Submit
