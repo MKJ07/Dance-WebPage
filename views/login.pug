@@ -1,0 +1,23 @@
+extends base.pug
+block scripts
+      script(src='/Static/app.js')
+block style 
+    style
+        include ../Static/style.css
+        include ../Static/login.css
+
+block content
+    .wrapper.fadeInDown
+        #formContent
+            h2.active  Sign In 
+            h2.inactive.underlineHover Sign Up 
+
+            .fadeIn.first
+                img#icon(src='' alt='User Icon')
+            form
+                input#login.fadeIn.second(type='text' name='login' placeholder='login')
+                input#password.fadeIn.third(type='text' name='login' placeholder='password')
+                input.fadeIn.fourth(type='submit' value='Log In')
+            #formFooter
+                a.underlineHover(href='#') Forgot Password?
+
